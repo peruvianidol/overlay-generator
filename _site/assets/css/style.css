@@ -17,7 +17,7 @@ body > :not(:last-child) {
   display: grid;
   max-height: 66vh;
   aspect-ratio: var(--ratio-widescreen);
-  gap: var(--size-3);
+  column-gap: var(--size-3);
   padding: var(--size-3);
   background: var(--gradient-2);
 }
@@ -25,10 +25,12 @@ body > :not(:last-child) {
   position: relative;
   color: white;
   outline: var(--border-size-2) dashed var(--red-8);
+  outline-offset: calc(var(--border-size-2) * -1);
 }
 
 [data-grid-area=header] {
   grid-area: header;
+  padding: var(--size-3);
 }
 
 [data-grid-area=main] {
@@ -41,11 +43,12 @@ body > :not(:last-child) {
 
 [data-grid-area=footer] {
   grid-area: footer;
+  padding: var(--size-3);
 }
 
 .og-layout-1 {
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: 1fr minmax(0, 1fr);
   grid-template-areas: "main main main main aside" "footer footer footer footer footer";
 }
 
@@ -56,9 +59,9 @@ body > :not(:last-child) {
 }
 
 .og-layout-3 {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 4fr) minmax(0, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header header header" ". main ." "footer footer footer";
+  grid-template-areas: "header" "main" "footer";
 }
 
 :where(.og-source) {
@@ -69,6 +72,10 @@ body > :not(:last-child) {
 
 :where([data-aspect-ratio="16-9"]) {
   aspect-ratio: var(--ratio-widescreen);
+}
+
+:where([data-aspect-ratio="3-4"]) {
+  aspect-ratio: var(--ratio-portrait);
 }
 
 :where([data-aspect-ratio="1"]) {
@@ -97,8 +104,9 @@ body > :not(:last-child) {
 :where(.og-grid) {
   display: grid;
   gap: var(--size-3);
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(0, calc(33% - var(--size-3) / 2 + 1px)));
 }
 
 iframe {
