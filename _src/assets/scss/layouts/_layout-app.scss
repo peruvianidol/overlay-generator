@@ -33,7 +33,7 @@
     outline-offset: -2px;
     aspect-ratio: 16 / 9;
     margin-inline: var(--size-3);
-    background-color: black;
+    background-color: var(--bg-color, black);
   }
 
 }
