@@ -1,10 +1,10 @@
-:where([class*="og-layout"]) {
+:where([class*="og-layout"]):not(.og-layout-app) {
   display: grid;
   max-height: 66vh;
   aspect-ratio: var(--ratio-widescreen);
   column-gap: var(--size-3);
   padding: var(--size-3);
-  background: var(--gradient-2);
+  background: var(--gradient-1);
   > * {
     position: relative;
     color: white;

@@ -1,0 +1,50 @@
+:where([class*="og-heading"]) {
+  font-weight: var(--font-weight-6);
+}
+
+.og-heading-1 {
+  font-size: var(--font-size-5);
+  line-height: var(--font-lineheight-0);
+}
+
+.og-heading-2 {
+  font-size: var(--font-size-4);
+  line-height: var(--font-lineheight-1);
+}
+
+.og-heading-3 {
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-2);
+}
+
+.og-heading-4 {
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-3);
+}
+
+.og-text-large {
+  font-size: var(--font-size-3);
+  line-height: var(--font-lineheight-2);
+}
+
+.og-text-medium {
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-3);
+}
+
+.og-text-small {
+  font-size: var(--font-size-0);
+  line-height: var(--font-lineheight-2);
+}
+
+.og-text-inverse {
+  color: var(--gray-0);
+}
+
+.og-text-strong {
+  font-weight: var(--font-weight-6);
+}
+
+.og-text-center {
+  text-align: center;
+}

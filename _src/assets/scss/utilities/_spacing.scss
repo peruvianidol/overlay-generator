@@ -1,0 +1,21 @@
+.og-inset-square-8 {
+  padding: var(--size-2);
+}
+.og-inset-square-16 {
+  padding: var(--size-3);
+}
+.og-inset-square-24 {
+  padding: var(--size-5);
+}
+.og-inset-square-32 {
+  padding: var(--size-7);
+}
+
+
+.og-inset-squish-8 {
+  padding: var(--size-2) calc(var(--size-2) * 2);
+}
+
+.og-block {
+  margin-block-end: var(--size-3);
+}
