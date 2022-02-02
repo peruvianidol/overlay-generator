@@ -18,7 +18,7 @@ layout: base
   <fieldset class="og-fieldset">
     <legend>Frame</legend>
 
-    <div class="og-flex-32">
+    <div class="og-flex-32 og-block">
       <div>
         <label class="og-label og-block-8">Background Color</label>
         <input class="og-input" type="color" id="sceneBgColor" onchange="selectBgColor()">
@@ -61,32 +61,38 @@ layout: base
         </select>
       </div>
     </div>
-<!--
-    <div>
-      <label class="og-label og-block-8">Background Image</label>
-      <input type="file">
-    </div>
 
     <div>
       <label class="og-label og-block-8">Padding</label>
-      <label class="og-label og-block-8">
-        <input type="radio" value="8" name="padding">
-        <span>8px</span>
-      </label>
-      <label class="og-label og-block-8">
-        <input type="radio" value="16" name="padding">
-        <span>16px</span>
-      </label>
-      <label class="og-label og-block-8">
-        <input type="radio" value="24" name="padding">
-        <span>24px</span>
-      </label>
-      <label class="og-label og-block-8">
-        <input type="radio" value="32" name="padding">
-        <span>32px</span>
-      </label>
--->
-    </fieldset>
+      <div class="og-flex-8">
+        <label class="og-label og-radio">
+          <input type="radio" value="0" name="padding" checked  onchange="setPadding()">
+          <span>0px</span>
+        </label>
+        <label class="og-label og-radio">
+          <input type="radio" value="8" name="padding" onchange="setPadding()">
+          <span>8px</span>
+        </label>
+        <label class="og-label og-radio">
+          <input type="radio" value="16" name="padding" onchange="setPadding()">
+          <span>16px</span>
+        </label>
+        <label class="og-label og-radio">
+          <input type="radio" value="24" name="padding" onchange="setPadding()">
+          <span>24px</span>
+        </label>
+        <label class="og-label og-radio og-inline">
+          <input type="radio" value="32" name="padding" onchange="setPadding()">
+          <span>32px</span>
+        </label>
+        <label class="og-flex-8">
+          <input type="checkbox" id="paddingToggle" class="og-checkbox" onchange="togglePadding()">
+          <span>Show Padding</span>
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
 
 </aside>
 

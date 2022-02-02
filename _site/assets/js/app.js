@@ -16,3 +16,15 @@ function selectBgColor() {
   gradientSelect.value = '';
   scene.style.setProperty("--bg-color", colorPicker.value);
 }
+
+function togglePadding() {
+  let paddingToggle = document.querySelector("paddingToggle");
+  let scene = document.querySelector("#scene");
+  scene.toggleAttribute("data-show-padding");
+}
+
+function setPadding() {
+  let padding = document.querySelector("input[name='padding']:checked");
+  let scene = document.querySelector("#scene");
+  scene.style.setProperty("--padding", padding.value + "px");
+}

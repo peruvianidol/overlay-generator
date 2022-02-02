@@ -3,11 +3,8 @@
   align-items: center;
   gap: var(--size-3);
 }
-
-.og-flex-24 {
-  gap: var(--size-4);
-}
-
-.og-flex-32 {
-  gap: var(--size-7);
-}
+:where(.og-flex-0)  { gap: 0; }
+:where(.og-flex-4)  { gap: var(--size-1); }
+:where(.og-flex-8)  { gap: var(--size-2); }
+:where(.og-flex-24) { gap: var(--size-4); }
+:where(.og-flex-32) { gap: var(--size-7); }
