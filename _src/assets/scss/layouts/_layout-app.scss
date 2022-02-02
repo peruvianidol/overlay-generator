@@ -1,11 +1,13 @@
 .og-layout-app {
+  background-color: var(--gray-9);
+  color: ivory;
 
   [data-grid-area="header"] {
     grid-area: header;
     background-color: var(--violet-9);
     color: var(--yellow-0);
     padding: var(--size-3);
-    border-bottom: var(--border-size-1) solid var(--gray-3);
+    border-bottom: var(--border-size-2) solid ivory;
 
     :where(a) {
       color: inherit;
@@ -31,6 +33,7 @@
     outline-offset: -2px;
     aspect-ratio: 16 / 9;
     margin-inline: var(--size-3);
+    background-color: black;
   }
 
 }
