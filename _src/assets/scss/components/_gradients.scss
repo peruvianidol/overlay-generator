@@ -1,9 +1,10 @@
-.og-gradient-1 {
-  background: var(--gradient-1);
-}
-.og-gradient-2 {
-  background: var(--gradient-2)
-}
-.og-gradient-3 {
-  background: var(--gradient-3);
-}
+[data-gradient="1"] { background: var(--gradient-1); }
+[data-gradient="2"] { background: var(--gradient-2); }
+[data-gradient="3"] { background: var(--gradient-3); }
+[data-gradient="4"] { background: var(--gradient-4); }
+[data-gradient="5"] { background: var(--gradient-5); }
+[data-gradient="6"] { background: var(--gradient-6); }
+[data-gradient="7"] { background: var(--gradient-7); }
+[data-gradient="8"] { background: var(--gradient-8); }
+[data-gradient="9"] { background: var(--gradient-9); }
+[data-gradient="10"] { background: var(--gradient-10); }

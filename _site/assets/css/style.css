@@ -72,16 +72,73 @@ body {
   gap: var(--size-3);
 }
 
-.og-gradient-1 {
+[data-gradient="1"] {
   background: var(--gradient-1);
 }
 
-.og-gradient-2 {
+[data-gradient="2"] {
   background: var(--gradient-2);
 }
 
-.og-gradient-3 {
+[data-gradient="3"] {
   background: var(--gradient-3);
+}
+
+[data-gradient="4"] {
+  background: var(--gradient-4);
+}
+
+[data-gradient="5"] {
+  background: var(--gradient-5);
+}
+
+[data-gradient="6"] {
+  background: var(--gradient-6);
+}
+
+[data-gradient="7"] {
+  background: var(--gradient-7);
+}
+
+[data-gradient="8"] {
+  background: var(--gradient-8);
+}
+
+[data-gradient="9"] {
+  background: var(--gradient-9);
+}
+
+[data-gradient="10"] {
+  background: var(--gradient-10);
+}
+
+.og-label {
+  display: block;
+  font-weight: var(--font-weight-6);
+}
+
+.og-select {
+  appearance: none;
+  background-color: white;
+  border: var(--border-size-1) solid var(--gray-6);
+  border-radius: var(--radius-2);
+  padding: var(--size-2) var(--size-5) var(--size-2) var(--size-2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z' fill='%23343a40'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: var(--size-3) var(--size-3);
+  background-position: center right var(--size-2);
+}
+
+.og-fieldset {
+  border-radius: var(--radius-2);
+  border-color: var(--violet-8);
+  padding: var(--size-3);
+}
+.og-fieldset legend {
+  font-weight: var(--font-weight-6);
+  font-size: var(--font-size-3);
+  line-height: var(--font-line-height-2);
+  padding-inline: var(--size-2);
 }
 
 :where([class*="og-layout"]):not(.og-layout-app) {
@@ -210,9 +267,10 @@ iframe {
 }
 .og-layout-app [data-grid-area=scene] {
   grid-area: scene;
-  outline: 2px dashed red;
+  outline: 2px solid black;
   outline-offset: -2px;
   aspect-ratio: 16/9;
+  margin-inline: var(--size-3);
 }
 
 .og-surface-red {
@@ -237,6 +295,14 @@ iframe {
 
 .og-inset-squish-8 {
   padding: var(--size-2) calc(var(--size-2) * 2);
+}
+
+.og-block-4 {
+  margin-block-end: var(--size-1);
+}
+
+.og-block-8 {
+  margin-block-end: var(--size-2);
 }
 
 .og-block {
