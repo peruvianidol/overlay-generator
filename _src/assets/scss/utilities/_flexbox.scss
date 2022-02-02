@@ -1,0 +1,13 @@
+:where([class*="og-flex"]) {
+  display: flex;
+  align-items: center;
+  gap: var(--size-3);
+}
+
+.og-flex-24 {
+  gap: var(--size-4);
+}
+
+.og-flex-32 {
+  gap: var(--size-7);
+}
