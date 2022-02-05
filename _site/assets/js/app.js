@@ -26,5 +26,5 @@ function togglePadding() {
 function setPadding() {
   let padding = document.querySelector("input[name='padding']:checked");
   let scene = document.querySelector("#scene");
-  scene.style.setProperty("--padding", padding.value + "px");
+  scene.style.setProperty("--padding", padding.value);
 }

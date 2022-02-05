@@ -1,4 +1,11 @@
 @import "https://unpkg.com/open-props";
+[data-grid-area=scene] {
+  --size-2: .4167vw;
+  --size-3: .8333vw;
+  --size-5: 1.250vw;
+  --size-7: 1.667vw;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
