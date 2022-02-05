@@ -14,7 +14,6 @@
 }
 [data-grid-area="header"] {
   grid-area: header;
-  padding: var(--size-3);
 }
 [data-grid-area="main"] {
   grid-area: main;
@@ -24,7 +23,6 @@
 }
 [data-grid-area="footer"] {
   grid-area: footer;
-  padding: var(--size-3);
 }
 .og-layout-1 {
   grid-template-columns: repeat(5, 1fr);

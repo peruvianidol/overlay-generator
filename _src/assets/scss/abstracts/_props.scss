@@ -1,8 +1,8 @@
 // convert props to viewport units in scene
 
 [data-grid-area="scene"] {
-  --size-2: .4167vw; // 8px
-  --size-3: .8333vw; // 16px
-  --size-5: 1.250vw; // 24px
-  --size-7: 1.667vw; // 32px
+  --size-2-vw: .4167vw; // 8px
+  --size-3-vw: .8333vw; // 16px
+  --size-5-vw: 1.250vw; // 24px
+  --size-7-vw: 1.667vw; // 32px
 }

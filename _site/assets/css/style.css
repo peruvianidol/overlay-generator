@@ -1,9 +1,9 @@
 @import "https://unpkg.com/open-props";
 [data-grid-area=scene] {
-  --size-2: .4167vw;
-  --size-3: .8333vw;
-  --size-5: 1.250vw;
-  --size-7: 1.667vw;
+  --size-2-vw: .4167vw;
+  --size-3-vw: .8333vw;
+  --size-5-vw: 1.250vw;
+  --size-7-vw: 1.667vw;
 }
 
 * {
@@ -297,7 +297,6 @@ body {
 
 [data-grid-area=header] {
   grid-area: header;
-  padding: var(--size-3);
 }
 
 [data-grid-area=main] {
@@ -310,7 +309,6 @@ body {
 
 [data-grid-area=footer] {
   grid-area: footer;
-  padding: var(--size-3);
 }
 
 .og-layout-1 {
@@ -417,6 +415,58 @@ iframe {
   background-color: var(--bg-color, black);
 }
 
+.og-thumbnail {
+  width: 100%;
+  max-width: max(160px, 20%);
+}
+.og-thumbnail [data-grid-area=main] {
+  grid-area: main;
+}
+.og-thumbnail [data-grid-area=sidebar] {
+  grid-area: sidebar;
+}
+.og-thumbnail [data-grid-area=footer] {
+  grid-area: footer;
+}
+.og-thumbnail [data-layout] {
+  background-color: var(--blue-6);
+  aspect-ratio: 16/9;
+  display: grid;
+  gap: 2px;
+  outline: 2px solid var(--blue-6);
+}
+.og-thumbnail [data-layout] > * {
+  background-color: var(--gray-8);
+}
+.og-thumbnail [data-layout=sidebar-full],
+.og-thumbnail [data-layout=footer-full] {
+  grid-template-columns: 1fr 20%;
+  grid-template-rows: 1fr 20%;
+}
+.og-thumbnail [data-layout=sidebar-full] [data-grid-area=main],
+.og-thumbnail [data-layout=footer-full] [data-grid-area=main] {
+  aspect-ratio: 16/9;
+}
+.og-thumbnail [data-layout=sidebar-full] {
+  grid-template-areas: "main sidebar" "footer sidebar";
+}
+.og-thumbnail [data-layout=footer-full] {
+  grid-template-areas: "main sidebar" "footer footer";
+}
+.og-thumbnail [data-layout=no-sidebar] {
+  grid-template-rows: 1fr 20%;
+  grid-template-areas: "main" "footer";
+}
+.og-thumbnail [data-layout=split] {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 20%;
+  grid-template-areas: "main sidebar" "footer footer";
+}
+.og-thumbnail figcaption {
+  padding-block: var(--size-2);
+  text-align: center;
+}
+
 .og-surface-red {
   background-color: var(--red-8);
 }
@@ -462,6 +512,10 @@ iframe {
 }
 
 .og-block {
+  margin-block-end: var(--size-3);
+}
+
+.og-flow > :not(:last-child) {
   margin-block-end: var(--size-3);
 }
 

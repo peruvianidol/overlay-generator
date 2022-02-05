@@ -28,7 +28,55 @@
   </ul>-->
 </header>
 
-<aside data-grid-area="aside">
+<aside data-grid-area="aside" class="og-flow">
+
+  <fieldset class="og-fieldset">
+    <legend>Layout</legend>
+
+    <div class="og-flex-row">
+      <figure class="og-thumbnail">
+        <div data-layout="fullscreen">
+          <p>&nbsp;</p>
+        </div>
+        <figcaption>Fullscreen</figcaption>
+      </figure>
+
+      <figure class="og-thumbnail">
+        <div data-layout="sidebar-full">
+          <p data-grid-area="main"></p>
+          <p data-grid-area="sidebar"></p>
+          <p data-grid-area="footer">&nbsp;</p>
+        </div>
+        <figcaption>Sidebar Full</figcaption>
+      </figure>
+
+      <figure class="og-thumbnail">
+        <div data-layout="footer-full">
+          <p data-grid-area="main"></p>
+          <p data-grid-area="sidebar"></p>
+          <p data-grid-area="footer">&nbsp;</p>
+        </div>
+        <figcaption>Footer Full</figcaption>
+      </figure>
+
+      <figure class="og-thumbnail">
+        <div data-layout="split">
+          <p data-grid-area="main"></p>
+          <p data-grid-area="sidebar"></p>
+          <p data-grid-area="footer">&nbsp;</p>
+        </div>
+        <figcaption>Split</figcaption>
+      </figure>
+
+      <figure class="og-thumbnail">
+        <div data-layout="no-sidebar">
+          <p data-grid-area="main"></p>
+          <p data-grid-area="footer">&nbsp;</p>
+        </div>
+        <figcaption>No Sidebar</figcaption>
+      </figure>
+    </div>
+  </fieldset>
 
   <fieldset class="og-fieldset">
     <legend>Frame</legend>
@@ -85,19 +133,19 @@
           <span>0px</span>
         </label>
         <label class="og-label og-radio">
-          <input type="radio" value="var(--size-2)" name="padding" onchange="setPadding()">
+          <input type="radio" value="var(--size-2-vw)" name="padding" onchange="setPadding()">
           <span>8px</span>
         </label>
         <label class="og-label og-radio">
-          <input type="radio" value="var(--size-3)" name="padding" onchange="setPadding()">
+          <input type="radio" value="var(--size-3-vw)" name="padding" onchange="setPadding()">
           <span>16px</span>
         </label>
         <label class="og-label og-radio">
-          <input type="radio" value="var(--size-5)" name="padding" onchange="setPadding()">
+          <input type="radio" value="var(--size-5-vw)" name="padding" onchange="setPadding()">
           <span>24px</span>
         </label>
         <label class="og-label og-radio og-inline">
-          <input type="radio" value="var(--size-7)" name="padding" onchange="setPadding()">
+          <input type="radio" value="var(--size-7-vw)" name="padding" onchange="setPadding()">
           <span>32px</span>
         </label>
         <label class="og-flex-8">
@@ -106,7 +154,6 @@
         </label>
       </div>
     </div>
-
   </fieldset>
 
 </aside>

@@ -1,15 +1,7 @@
-.og-inset-square-8 {
-  padding: var(--size-2);
-}
-.og-inset-square-16 {
-  padding: var(--size-3);
-}
-.og-inset-square-24 {
-  padding: var(--size-5);
-}
-.og-inset-square-32 {
-  padding: var(--size-7);
-}
+.og-inset-square-8  { padding: var(--size-2); }
+.og-inset-square-16 { padding: var(--size-3); }
+.og-inset-square-24 { padding: var(--size-5); }
+.og-inset-square-32 { padding: var(--size-7); }
 
 .og-inset-squish-8 {
   padding: var(--size-2) calc(var(--size-2) * 2);
@@ -22,3 +14,7 @@
 .og-block-4 { margin-block-end: var(--size-1); }
 .og-block-8 { margin-block-end: var(--size-2); }
 .og-block   { margin-block-end: var(--size-3); }
+
+.og-flow > :not(:last-child) {
+  margin-block-end: var(--size-3);
+}
